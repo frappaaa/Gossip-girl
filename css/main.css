@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Helvetica-Neue';
+  src: url("../fonts/Helvetica-Neue/Helvetica-Neue-Regular");
+  /* IE9*/
+  src: url("../fonts/Helvetica-Neue/Helvetica-Neue-Regular?#iefix") format("embedded-opentype"), url("../fonts/Helvetica-Neue/Helvetica-Neue-Regular.woff2") format("woff2"), url("../fonts/Helvetica-Neue/Helvetica-Neue-Regular.woff") format("woff"), url("../fonts/Helvetica-Neue/Helvetica-Neue-Regular.ttf") format("truetype"), url("../fonts/Helvetica-Neue/Helvetica-Neue-Regular.svg#Helvetica 33 Thin Extended") format("svg");
+  /* iOS 4.1- */
+}
+
+p {
+  list-style-type: none;
+  font-family: 'Helvetica-Neue';
+  font-size: 2rem;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #dec341;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background-color: white;
+  padding: 10px;
+  z-index: 2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  -ms-grid-columns: .5fr 1fr;
+      grid-template-columns: .5fr 1fr;
+  height: 100vh;
+  background-color: #fff9f1;
+}
+
+body .sorting_letters {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+body .sorting_letters h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 5px 0;
+}
+
+body .sorting_letters ul {
+  list-style-type: none;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  border: 1px solid;
+  padding: 10px;
+}
+
+body .img {
+  height: 90vh;
+  width: 72vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+}
+
+body .img .up {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/gossip-girl-meme-up.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body .img .up .input_text {
+  position: absolute;
+  bottom: 10%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  width: 70%;
+}
+
+body .img .up .input_text #text {
+  border: none;
+  width: 100%;
+  background: #fff;
+  height: 50px;
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+
+body .img .down {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/gossip-girl-meme-down.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body .img .down .droptrue {
+  position: absolute;
+  width: 70%;
+  height: 70px;
+  bottom: 0%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px;
+}
+
+body .img .down .droptrue p {
+  font-size: 3rem;
+  margin: 0;
+}
+
+body .img .down .droptrue p:not(:last-child) {
+  margin-right: 5px;
+}
+/*# sourceMappingURL=main.css.map */
